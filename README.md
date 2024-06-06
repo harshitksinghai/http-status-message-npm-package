@@ -18,6 +18,7 @@ import { getStatusMessage } from 'status-quotes'; // ES6 import syntax
 // Get a formal message for status code 404
 const message = getStatusMessage(404, 'formal');
 console.log(message);
+```
 
 ## API
 
