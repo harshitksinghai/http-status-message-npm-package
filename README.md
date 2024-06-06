@@ -5,8 +5,9 @@ status-quotes is an npm package that provides a collection of status code messag
 ## Installation
 
 You can install status-quotes using npm:
-
+```javascript
 npm install status-quotes
+```
 
 ## Usage
 
