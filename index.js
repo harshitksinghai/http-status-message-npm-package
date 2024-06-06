@@ -1,6 +1,6 @@
 import { messages } from './messages.js';
 
-export function getStatusMessage(statusCode, messageTone) {
+export function getStatusQuote(statusCode, messageTone) {
     const validMessageTones = ["formal", "informal", "straightforward", "technical", "funny", "empathetic", "educational"];
     
     if (!messages[statusCode]) {

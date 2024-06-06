@@ -12,18 +12,18 @@ npm install status-quotes
 ## Usage
 
 ```javascript
-const { getStatusMessage } = require('status-quotes');
+const { getStatusQuote } = require('status-quotes');
 // or
-import { getStatusMessage } from 'status-quotes'; // ES6 import syntax
+import { getStatusQuote } from 'status-quotes'; // ES6 import syntax
 
 // Get a formal message for status code 404
-const message = getStatusMessage(404, 'formal');
+const message = getStatusQuote(404, 'formal');
 console.log(message);
 ```
 
 ## API
 
-### `getStatusMessage(statusCode, messageTone)`
+### `getStatusQuote(statusCode, messageTone)`
 
 Returns a message string corresponding to the given HTTP status code and tone.
 
