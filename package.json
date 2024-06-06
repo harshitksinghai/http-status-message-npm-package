@@ -1,0 +1,31 @@
+{
+  "name": "status-quotes",
+  "version": "1.0.1",
+  "description": "A utility for generating user-friendly messages based on HTTP status codes and message tone.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshitksinghai/status-quotes-npm-package.git"
+  },
+  "keywords": [
+    "http",
+    "status",
+    "codes",
+    "status",
+    "codes",
+    "http",
+    "status",
+    "response",
+    "message"
+  ],
+  "author": "harshitksinghai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harshitksinghai/status-quotes-npm-package/issues"
+  },
+  "homepage": "https://github.com/harshitksinghai/status-quotes-npm-package#readme"
+}
