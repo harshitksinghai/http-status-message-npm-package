@@ -27,10 +27,11 @@ console.log(message);
 Returns a message string corresponding to the given HTTP status code and tone.
 
 - `statusCode` (number): The HTTP status code (e.g., 200, 404, 500).
-- `messageTone` (string): The tone of the message. Available options: `formal`, `informal`, `straightforward`, `technical`, `funny`, `empathetic`, `educational`.
+- `messageTone` (string): The tone of the message. 
+    - Available options: `formal`, `informal`, `straightforward`, `technical`, `funny`, `empathetic`, `educational`.
 
 ### Available Message Tones
-// all lower case
+(all lower case)
 - **formal**: Polite and professional tone suitable for official communication.
 - **informal**: Casual and friendly tone for a more relaxed atmosphere.
 - **straightforward**: Direct and clear tone without any frills.
