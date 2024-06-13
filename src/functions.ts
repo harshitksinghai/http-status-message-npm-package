@@ -1,7 +1,8 @@
-import { messages } from './messages.js';
+import { messages } from './messages';
+import { MessageTone } from './types';
 
-export function getStatusQuote(statusCode, messageTone) {
-    const validMessageTones = ["formal", "informal", "straightforward", "technical", "funny", "empathetic", "educational"];
+export function getStatusQuote(statusCode: number, messageTone: MessageTone): string {
+    const validMessageTones: MessageTone[] = ["formal", "informal", "straightforward", "technical", "funny", "empathetic", "educational"];
     
     if (!messages[statusCode]) {
         throw new Error(`Invalid status code: ${statusCode}.`);

@@ -1,4 +1,12 @@
-export const messages = {
+import { MessageTone } from "./types";
+
+interface StatusMessages {
+    [key: number]: {
+        [key in MessageTone]: string;
+    };
+}
+
+export const messages: StatusMessages = {
     100: {
         "formal": "Continue: The server has received the request headers and the client should proceed to send the request body.",
         "informal": "We've received the initial request. You can now proceed to send the rest!",
