@@ -1,29 +1,29 @@
-# status-quotes
+# http-status-message
 
-status-quotes is an npm package that provides a collection of status code messages tailored for various tones, suitable for displaying in web applications, APIs, or any other software that communicates HTTP status codes to users.
+http-status-message is an npm package that provides a collection of status code messages tailored for various tones, suitable for displaying in web applications, APIs, or any other software that communicates HTTP status codes to users.
 
 ## Installation
 
-You can install status-quotes using npm:
+You can install http-status-message using npm:
 ```javascript
-npm install status-quotes
+npm install http-status-message
 ```
 
 ## Usage
 
 ```javascript
-const { getStatusQuote } = require('status-quotes');
+const { getStatusMessage } = require('http-status-message');
 // or
-import { getStatusQuote } from 'status-quotes'; // ES6 import syntax
+import { getStatusMessage } from 'http-status-message'; // ES6 import syntax
 
 // Get a formal message for status code 404
-const message = getStatusQuote(404, 'formal');
+const message = getStatusMessage(404, 'formal');
 console.log(message);
 ```
 
 ## API
 
-### `getStatusQuote(statusCode, messageTone)`
+### `getStatusMessage(statusCode, messageTone)`
 
 Returns a message string corresponding to the given HTTP status code and tone.
 
@@ -43,7 +43,7 @@ Returns a message string corresponding to the given HTTP status code and tone.
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions for improvements, new features, or encounter any issues, please [open an issue](https://github.com/harshitksinghai/status-quotes-npm-package/issues) or submit a pull request.
+Contributions are welcome! If you have suggestions for improvements, new features, or encounter any issues, please [open an issue](https://github.com/harshitksinghai/http-status-message-npm-package/issues) or submit a pull request.
 
 ## License
 

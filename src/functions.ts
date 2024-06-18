@@ -1,7 +1,7 @@
 import { messages } from './messages';
 import { MessageTone } from './types';
 
-export function getStatusQuote(statusCode: number, messageTone: MessageTone): string {
+export function getStatusMessage(statusCode: number, messageTone: MessageTone): string {
     const validMessageTones: MessageTone[] = ["formal", "informal", "straightforward", "technical", "funny", "empathetic", "educational"];
     
     if (!messages[statusCode]) {
