@@ -5,41 +5,42 @@ http-status-message is an npm package that provides a collection of status code 
 ## Installation
 
 You can install http-status-message using npm:
-```javascript
+javascript
 npm install http-status-message
-```
+
 
 ## Usage
 
-```javascript
+javascript
 const { getStatusMessage } = require('http-status-message');
 // or
 import { getStatusMessage } from 'http-status-message'; // ES6 import syntax
 
-// Get a formal message for status code 404
+// Get a formal message along with corresponding emoji for status code 404
 const message = getStatusMessage(404, 'formal');
 console.log(message);
-```
+
 
 ## API
 
-### `getStatusMessage(statusCode, messageTone)`
+### getStatusMessage(statusCode, messageTone)
 
-Returns a message string corresponding to the given HTTP status code and tone.
+Returns an object containing a message string and an emoji corresponding to the given HTTP status code and tone.
 
-- `statusCode` (number): The HTTP status code (e.g., 200, 404, 500).
-- `messageTone` (string): The tone of the message. 
-    - Available options: `formal`, `informal`, `straightforward`, `technical`, `funny`, `empathetic`, `educational`.
+- statusCode (number): The HTTP status code (e.g., 200, 404, 500).
+- messageTone (string): The tone of the message. 
+    - Available options: formal, informal, straightforward, technical, funny, empathetic, educational, short.
 
 ### Available Message Tones
 (all lower case)
-- **formal**: Polite and professional tone suitable for official communication.
-- **informal**: Casual and friendly tone for a more relaxed atmosphere.
-- **straightforward**: Direct and clear tone without any frills.
-- **technical**: Tone tailored for technical audiences with precise language.
-- **funny**: Humorous tone to lighten the mood and engage users.
-- **empathetic**: Compassionate and understanding tone for delicate situations.
-- **educational**: Informative tone providing explanations and guidance.
+- *formal*: Polite and professional tone suitable for official communication.
+- *informal*: Casual and friendly tone for a more relaxed atmosphere.
+- *straightforward*: Direct and clear tone without any frills.
+- *technical*: Tone tailored for technical audiences with precise language.
+- *funny*: Humorous tone to lighten the mood and engage users.
+- *empathetic*: Compassionate and understanding tone for delicate situations.
+- *educational*: Informative tone providing explanations and guidance.
+- *short*: Concise tone providing the official HTTP MDN documentation messages.
 
 ## Contributing
 
