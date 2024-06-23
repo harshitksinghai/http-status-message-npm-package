@@ -16,7 +16,7 @@ const { getStatusMessage } = require('http-status-message');
 // or
 import { getStatusMessage } from 'http-status-message'; // ES6 import syntax
 
-// Get a formal message for status code 404
+// Get a formal message along with corresponding emoji for status code 404
 const message = getStatusMessage(404, 'formal');
 console.log(message);
 ```
@@ -25,11 +25,11 @@ console.log(message);
 
 ### `getStatusMessage(statusCode, messageTone)`
 
-Returns a message string corresponding to the given HTTP status code and tone.
+Returns an object containing a message string and an emoji corresponding to the given HTTP status code and tone.
 
 - `statusCode` (number): The HTTP status code (e.g., 200, 404, 500).
 - `messageTone` (string): The tone of the message. 
-    - Available options: `formal`, `informal`, `straightforward`, `technical`, `funny`, `empathetic`, `educational`.
+    - Available options: `formal`, `informal`, `straightforward`, `technical`, `funny`, `empathetic`, `educational`, `short`.
 
 ### Available Message Tones
 (all lower case)
@@ -40,6 +40,7 @@ Returns a message string corresponding to the given HTTP status code and tone.
 - **funny**: Humorous tone to lighten the mood and engage users.
 - **empathetic**: Compassionate and understanding tone for delicate situations.
 - **educational**: Informative tone providing explanations and guidance.
+- **short**: Concise tone providing the official HTTP MDN documentation messages.
 
 ## Contributing
 
