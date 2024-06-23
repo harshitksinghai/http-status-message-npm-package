@@ -1,6 +1,6 @@
 {
   "name": "http-status-message",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A utility for generating user-friendly messages based on HTTP status codes and message tone.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
